@@ -9,7 +9,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <center><h1 class="lead">Apply for job </h1></center>
+                    <div style="text-align: center;"><h1 class="lead">Apply for job </h1></div>
                     <form action="" method="POST" class="" enctype="multipart/form-data">{% csrf_token %}
 
                         {{ form|crispy }}
@@ -20,22 +20,14 @@
                                        class="btn btn-primary btn-md text-white">
                             </div>
                         </div>
-
-
                     </form>
                     <script>
                         function myFunction() {
                             alert("Are you applying to this job?");
                         }
                     </script>
-
                 </div>
-
-
             </div>
-
         </div>
     </section>
-
-
 {% endblock %}
