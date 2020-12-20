@@ -22,8 +22,8 @@ class ContactForm(forms.ModelForm):
 class JobListingForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(JobListingForm, self).__init__(*args, **kwargs)
-        self.fields['job_location'].widget.attrs['placeholder'] = 'Dhaka,Bangladesh'
-        self.fields['Salary'].widget.attrs['placeholder'] = '60k-80k BDT, 4k-5k USD, Negotiable'
+        self.fields['job_location'].widget.attrs['placeholder'] = 'Minsk,Belarus'
+        self.fields['Salary'].widget.attrs['placeholder'] = '500 BYN, 500 USD'
         self.fields['title'].widget.attrs['placeholder'] = 'Software Engineer, Web Designer'
         self.fields['application_deadline'].widget.attrs['placeholder'] = '2020-12-27'
 

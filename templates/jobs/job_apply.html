@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
-
-{% load bootstrap %}
+{% load crispy_forms_filters %}
 
 {% block content %}
 
@@ -13,7 +12,7 @@
                     <center><h1 class="lead">Apply for job </h1></center>
                     <form action="" method="POST" class="" enctype="multipart/form-data">{% csrf_token %}
 
-                        {{ form|bootstrap }}
+                        {{ form|crispy }}
 
                         <div class="row form-group">
                             <div class="col-md-12">

@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
-
-{% load bootstrap %}
-
+{% load crispy_forms_filters %}
 
 {% block content %}
     <section class="home-section section-hero inner-page overlay bg-image"
@@ -29,7 +27,7 @@
                     <p>Already have your account?</p>
                     <form action="" method="POST">{% csrf_token %}
 
-                        {{ form|bootstrap }}
+                        {{ form|crispy }}
 
                         <div class="row form-group">
                             <div class="col-md-12">
