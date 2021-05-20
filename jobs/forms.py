@@ -6,14 +6,14 @@ class ContactForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
-        self.fields['Email'].widget.attrs['placeholder'] = 'Enter a valid E-mail'
+        self.fields['email'].widget.attrs['placeholder'] = 'Введите корректный E-mail'
 
     class Meta:
         model = Contact
         fields = [
             'first_name',
             'last_name',
-            'Email',
+            'email',
             'subject',
             'message'
         ]

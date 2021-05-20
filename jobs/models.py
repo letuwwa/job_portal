@@ -5,11 +5,11 @@ from django.utils import timezone
 
 
 class Contact(models.Model):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    Email = models.EmailField()
-    subject = models.CharField(max_length=100)
-    message = models.TextField()
+    first_name = models.CharField(max_length=100, verbose_name="Имя")
+    last_name = models.CharField(max_length=100, verbose_name="Фамилия")
+    email = models.EmailField(verbose_name="Почта")
+    subject = models.CharField(max_length=100, verbose_name="Тема")
+    message = models.TextField(verbose_name="Сообщение")
 
     def __str__(self):
         return self.first_name
