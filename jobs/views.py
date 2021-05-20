@@ -34,10 +34,6 @@ def about_us(request):
     return render(request, "jobs/about_us.html", {})
 
 
-def service(request):
-    return render(request, "jobs/services.html", {})
-
-
 def contact(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
