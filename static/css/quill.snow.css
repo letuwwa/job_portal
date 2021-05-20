@@ -660,9 +660,6 @@
   padding: 0px;
   width: 16px;
 }
-.ql-snow .ql-color-picker .ql-picker-item.ql-primary-color {
-  margin-bottom: toolbarPadding;
-}
 .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
   position: absolute;
   margin-top: -9px;
