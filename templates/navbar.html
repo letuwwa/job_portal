@@ -7,7 +7,7 @@
         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
           <li><a href="{% url 'home' %}" class="nav-link active">Главная</a></li>
           <li><a href="{% url 'jobs:job-listing' %}">Все вакансии</a></li>
-          <li><a href="{% url 'jobs:about' %}">Резюме</a></li>
+          <li><a href="{% url 'jobs:cvs' %}">Резюме</a></li>
           <li><a href="{% url 'jobs:contact' %}">Контакты</a></li>
             {% if request.user.is_authenticated %}
                 <li><a href="{% url 'accounts:logout' %}">Выйти</a></li>
@@ -24,8 +24,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="True" aria-expanded="false">
               {{request.user.first_name}} {{request.user.last_name}}</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="{% url 'accounts:logout' %}">Logout</a>
-
+              <a class="dropdown-item" href="{% url 'accounts:logout' %}">Выход</a>
             </div>
           </li>
           </ul>
