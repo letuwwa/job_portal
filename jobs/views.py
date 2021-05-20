@@ -30,8 +30,8 @@ def home(request):
     return render(request, "home.html", context)
 
 
-def all_cv(request):
-    return render(request, "jobs/all_csv.html", {})
+def about_us(request):
+    return render(request, "jobs/about_us.html", {})
 
 
 def contact(request):
