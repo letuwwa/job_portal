@@ -6,7 +6,7 @@ app_name = 'jobs'
 
 urlpatterns = [
     path('contact/', contact, name='contact'),
-    path('about/', about_us, name='about'),
+    path('cvs/', all_cv, name='cvs'),
     path('job-post/', job_post, name='job-post'),
     path('job-listing/', job_listing, name='job-listing'),
     path('job-single/<int:id>/', job_single, name='job-single'),
